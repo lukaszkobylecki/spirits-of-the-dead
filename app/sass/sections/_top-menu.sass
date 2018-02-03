@@ -1,0 +1,76 @@
+main
+  cursor: default
+  #top-menu
+    display: grid
+    grid-template-columns: 1fr 2fr
+    grid-auto-rows: 330px
+    div
+      // border: 1px solid $black
+      padding: 1em
+      img
+        display: none
+        max-height: 100%
+        max-width: 100%
+    .lobby
+      display: grid
+      grid-template-rows: 1fr 1fr 1fr 1fr
+      .name-wrapper
+        text-align: center
+        #username
+          @extend %input-text
+          text-align: left
+          border: none
+          outline: none
+          background-color: rgba(0,0,0,0)
+          border-bottom: 2px solid $pencil
+          width: 100%
+        button
+          @extend %paper-button
+      .info-wrapper
+        padding: 10px
+        margin: 0
+        border: 2px solid $pencil
+        border-radius: 10px
+        animation: wrap-in .7s
+        span
+          display: block
+          @extend %story-text
+          &.info
+            text-align: center
+            color: $pencil
+      .ready-wrapper
+        text-align: center
+        button
+          @extend %paper-button
+    .answers
+      margin: 30px 35px 10px 20px
+      border: 2px solid $pencil
+      border-radius: 10px
+      animation: wrap-in .7s
+      .info
+        margin-bottom: 0px
+      span
+        display: block
+        @extend %story-text
+        &.info
+          text-align: center
+          color: $pencil
+
+
+
+    button
+      @extend %story-text
+      border: none
+      background-color: rgba(0,0,0,0)
+
+@keyframes wrap-in
+  0%
+    transform: scaleX(0)
+    opacity: 0
+  80%
+    transform: scaleX(1.05)
+    opacity: 1
+  90%
+    transform: scaleX(0.95)
+  100%
+    transform: scaleX(1)

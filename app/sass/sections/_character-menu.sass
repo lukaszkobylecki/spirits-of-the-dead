@@ -1,0 +1,57 @@
+main
+  width: 900px
+  height: 700px
+  span
+    @extend %story-text
+    color: $pencil
+    font-size: 4em
+    position: absolute
+    top: 7%
+    left: 50%
+    transform: translate(-50%, -50%)
+  #character-menu
+    position: relative
+    top: 14%
+    transition: 2s
+    transform: translate(-30px, 0px)
+    text-align: center
+
+    div
+      position: absolute
+      height: 500px
+      width: 300px
+      // background-color: $accent-light
+      // border: 3px solid $black
+      transition: $transition-short
+    #oliver
+      background-image: url('../img/oliver-sketch.png')
+      background-size: cover
+      left: 5%
+      &:hover
+        cursor: pointer
+        background-image: url('../img/oliver-color.png')
+        transform: translate(0, 10px)
+    #alice
+      background-image: url('../img/alice-sketch.png')
+      background-size: cover
+      left: 25%
+      &:hover
+        cursor: pointer
+        background-image: url('../img/alice-color.png')
+        transform: translate(0, 10px)
+    #christopher
+      background-image: url('../img/christopher-sketch.png')
+      background-size: cover
+      left: 50%
+      &:hover
+        cursor: pointer
+        background-image: url('../img/christopher-color.png')
+        transform: translate(0, 10px)
+    #natalie
+      background-image: url('../img/natalie-sketch.png')
+      background-size: cover
+      left: 72%
+      &:hover
+        cursor: pointer
+        background-image: url('../img/natalie-color.png')
+        transform: translate(0, 10px)

@@ -1,0 +1,46 @@
+<!DOCTYPE html>
+<html>
+  <head>
+    <meta charset="utf-8">
+    <title>Spirits of the dead</title>
+    <link rel="stylesheet" href="css/game.css">
+  </head>
+  <body>
+    <main>
+      <section id="top-menu">
+        <div class="avatar">
+          <img id="alice-avatar" src="img/alice-avatar.png" alt="">
+          <img id="oliver-avatar" src="img/oliver-avatar.png" alt="">
+          <img id="christopher-avatar" src="img/christopher-avatar.png" alt="">
+          <img id="natalie-avatar" src="img/natalie-avatar.png" alt="">
+        </div>
+        <div class="lobby">
+          <div class="name-wrapper">
+            <input id="username" type="text" placeholder="your name" value="" id="name"/>
+            <button id="set-name" type="button">set name</button>
+          </div>
+          <div class="info-wrapper">
+            <span class="info">Server info</span>
+            <span id="players-online">Online: ??</span>
+            <span id="players-ready">Ready: ??</span>
+          </div>
+          <div class="ready-wrapper">
+            <button id="set-ready" type="button">ready</button>
+          </div>
+        </div>
+        <div class="answers">
+          <span class="info">Party</span>
+          <span id="answer-number">Answers: ??</span>
+          <span id="most-popular-answer"></span>
+        </div>
+      </section>
+      <section id="story">
+        <textarea rows="4" cols="50" id="wall" readonly></textarea>
+      </section>
+      <section id="terminal">
+        <input type="text" id="command-line"/>
+      </section>
+    </main>
+    <script type="text/javascript" src="js/game.js"></script>
+  </body>
+</html>
